@@ -11,7 +11,7 @@ In theory, it could be leveraged into other forms of binary exploitation.
   
 List of devices vulnerable is unknown and likely very large.
 
-## Machenism of Action
+## Mechanism of Action
 At best judgement, the failure of alignment of the bits in the SSID field causes alignment down to deeper levels of the system, possibly down to the processor, causing difficult to predict consequences.
 
 ## Impact

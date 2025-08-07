@@ -19,6 +19,10 @@ Testing is very challenging as it requires being out of range of all other WiFi 
 
 ## Hooting (usage)
 **DO NOT TEST IN RANGE OF ANY DEVICE YOU ARE UNWILLING TO DAMAGE**
-1. Install Scapy
-2. Uncomment line 19 of h00thoot.py
+1. Install [Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
+2. Uncomment line `19` of [h00thoot.py](./h00th00t.py)
 3. `python h00th00t.py`
+  
+---
+  
+![Stolas uwu~](./stolas-headdesk.gif)

@@ -1,7 +1,8 @@
 # h00th00t
 ## Sub-Byte Binary Underflow in WiFi Devices
 ## Warning: Test With Extreme Care
-### Summary
+### Warning: USE AT YOUR OWN PERIL
+## Summary
 Sending WiFi beacons where the SSID is set to some non-byte number of bits and a poorly matching SSID length breaks many random WiFi devices in range.  
   
 Some devices freeze, some reboot, some break, some brick.  
@@ -19,10 +20,12 @@ Testing is very challenging as it requires being out of range of all other WiFi 
 
 ## Hooting (usage)
 **DO NOT TEST IN RANGE OF ANY DEVICE YOU ARE UNWILLING TO DAMAGE**
-1. Install [Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
-2. Uncomment line `19` of [h00thoot.py](./h00th00t.py)
-3. `python h00th00t.py`
-  
+1. Designed for **linux** environments with **python3**
+2. Optional: edit line `4` and `5` of [h00thoot.py](./h00th00t.py) to match your sender and wifi device preferences
+   * Defaults are fine for most purposes
+3. Install [Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
+4. Uncomment line `19` of [h00thoot.py](./h00th00t.py)
+5. `python h00th00t.py`
+   * in some linux environments, sudo may be needed `sudo python h00th00t.py`
 ---
-  
 ![Stolas uwu~](./stolas-headdesk.gif)

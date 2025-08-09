@@ -20,13 +20,19 @@ Testing is very challenging as it requires being out of range of all other WiFi 
 
 ## Hooting (usage)
 **DO NOT TEST IN RANGE OF ANY DEVICE YOU ARE UNWILLING TO DAMAGE**
-1. Designed for **linux** environments with **python3**
-2. Set wifi device to monitor mode `bash wifi_monitor_mode.sh`
+_prerequisites_
+1. Linux with bash (tested on fully upgraded Kali Linux 2025.2 on Raspberry Pi 5)
+2. Python3 (tested on Python 3.13.3)
+3. [Scapy](https://scapy.readthedocs.io/en/latest/installation.html) (tested on Scapy 2.6.13)
+4. [A wifi device capable of monitor mode](https://www.stationx.net/best-wifi-adapters-for-kali-linux/) (tested with Alfa AWUS036ACH)
+
+_running_
+1. Set wifi device to monitor mode `bash wifi_monitor_mode.sh`
    * for usage see note at the top of [wifi_monitor_mode.sh](./wifi_monitor_mode.sh)
-3. Optional: edit line `4` and `5` of [h00thoot.py](./h00th00t.py) to match your sender and wifi device preferences
-   * Defaults are fine for most purposes
-4. Install [Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
-5. Uncomment line `38` of [h00thoot.py](./h00th00t.py)
-6. `sudo python h00th00t.py`
+2. Optional: edit line `4` and `5` of [h00thoot.py](./h00th00t.py) to match your sender and wifi device preferences
+   * Defaults to random source MAC and device wlan1
+3. Install 
+4. Uncomment line `38` of [h00thoot.py](./h00th00t.py)
+5. `sudo python h00th00t.py`
 ---
 ![Stolas uwu~](./assets/stolas-headdesk.gif)

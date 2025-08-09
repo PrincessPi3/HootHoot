@@ -23,17 +23,22 @@ def beacon_raw(SSID=b"PrincessPiNet", reported_length=13, interval_seconds=0.25)
     ssid_info = Dot11Elt(ID='SSID', info=RawVal(SSID), len=reported_length) # magic really happens here with Scapy's RawVal() function and the reported_length
 
     # assemble the frame
-    frame = RadioTap()/dot11/Dot11Beacon()/ssid_info
+    frame = RadioTap()/dot11/Dot11Beacon()/ssid_inf
+    # frame = raw(RadioTap()/dot11/Dot11Beacon()/ssid_info) # experimental
 
     # print info
     print(f"FIRIN MY LAZORRRRRR\n\tSSID: {SSID}\n\treported length: {reported_length}\n\tinterval seconds: {interval_seconds}\n\tsender bssid/mac: {sender_bssid_mac}\n")
-
+    
     # print packet
-    print("Packet to be sent:")
+    print("\n\nField Values\n")
+    ls(frame)
+
+    # hexdump packet
+    print("\n\nHexdump\n")
     hexdump(frame)
 
     # send it
-    sendp(frame, iface=iface, inter=interval_seconds, loop=1) # send on loop
+    # sendp(frame, iface=iface, inter=interval_seconds, loop=1) # send on loop
 
 # this can be most any value really experimentation is needed
 ssid_binary = 0b0101 # a few random bits to send as the SSID

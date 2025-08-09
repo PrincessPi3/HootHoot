@@ -27,7 +27,6 @@ Testing is very challenging as it requires being out of range of all other WiFi 
    * Defaults are fine for most purposes
 4. Install [Scapy](https://scapy.readthedocs.io/en/latest/installation.html)
 5. Uncomment line `38` of [h00thoot.py](./h00th00t.py)
-6. `python h00th00t.py`
-   * in some linux environments, sudo may be needed `sudo python h00th00t.py`
+6. `sudo python h00th00t.py`
 ---
 ![Stolas uwu~](./assets/stolas-headdesk.gif)
